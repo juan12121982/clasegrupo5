@@ -1,0 +1,70 @@
+A continuación les compartimos el documento marco del proyecto, que debe ser desarrollado para sus proyectos. Recuerden que debe ser enviado por medio de Google Classroom con fecha máxima de entrega el 9 de marzo de 2022.
+
+## Antecedentes empresariales
+
+* BL, venta de productos de cuero a través de Amazon.
+* ¿Qué problemas empresariales se pretenden resolver?
+--> Devolución de pedidos
+
+## Alcance
+* ¿Qué soluciones de ciencia de datos estamos tratando de construir?
+--> Predicción 
+* ¿Qué vamos a hacer?
+--> Modelo de predicciòn de devoluciones de producto
+* ¿Cómo va a ser consumido por el cliente?
+--> Reporte en powerBI
+
+## Personal
+* ¿Quiénes están en este proyecto?
+	* Microsoft:
+		* Jefe de proyecto: Efrain Arías
+		* PM: Ricardo Martinez
+		* Científico(s) de datos: Juan Paredes
+		* Director de cuentas
+	* Cliente:
+		* Administrador de datos: Kanglee
+		* Contacto con la empresa: Navegación
+	
+## Métricas
+* ¿Cuáles son los objetivos cualitativos? (por ejemplo, reducir la fuga de usuarios)
+--> Reducir la devolución de los pedidos.
+* ¿Cuáles son las métricas cuantificables (por ejemplo, reducir la fracción de usuarios con 4 semanas de inactividad)
+--> Identificar los factores de devolución de producto
+* Cuantificar qué mejora de los valores de la métrica es útil para el escenario del cliente (por ejemplo, reducir la fracción de usuarios con inactividad de 4 semanas en un 20%) 
+--> Aumentar el las ventas, disminuir costos.
+* ¿Cuál es el valor de referencia (actual) de la métrica? (por ejemplo, fracción actual de usuarios con inactividad de 4 semanas = 60%)
+--> PDTE
+* ¿Cómo mediremos la métrica? (por ejemplo, prueba A/B en un subconjunto específico durante un periodo determinado; o comparación del rendimiento después de la implementación con la línea de base)
+--> PDTE
+
+## Plan
+* Fases (hitos), calendario, breve descripción de lo que haremos en cada fase.
+1. Obtención de datos
+2. Análisis y entendimiento de los datos
+3. Modelamiento de datos
+4. Documentación del proyecto
+
+## Arquitectura
+* Datos
+	* ¿Qué datos esperamos? Datos en bruto en las fuentes de datos del cliente (por ejemplo, archivos on-prem, SQL, Hadoop on-prem, etc.)
+	--> Archivos .xlsx
+	* Movimiento de datos desde on-prem a Azure utilizando ADF u otras herramientas de movimiento de datos (Azcopy, EventHub, etc.) para mover
+	* Todos los datos, 
+	* después de una preagregación en el sistema local,
+	* datos muestreados suficientes para la modelización 
+
+* Qué herramientas y recursos de almacenamiento/análisis de datos se utilizarán en la solución, por ejemplo
+--> Recurso de almacenamiento en un servidor en la nube
+  * ASA para la agregación de flujos
+  * HDI/Hive/R/Python para la construcción de características, agregación y muestreo
+  * AzureML para el modelado y la operacionalización del servicio web
+* ¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.
+  * ¿Cómo utilizará el cliente los resultados del modelo para tomar decisiones?
+  * Canalización del movimiento de datos en producción
+  * Haga un diagrama de 1 diapositiva que muestre el flujo de datos de extremo a extremo y la arquitectura de decisiones
+    * Si hay un cambio sustancial en el flujo de trabajo del negocio del cliente, haga un diagrama antes/después que muestre el flujo de datos.
+
+## Comunicación
+* ¿Cómo nos mantendremos en contacto? ¿Reuniones semanales?
+-->Presenciales plataforma teams
+* ¿Quiénes son las personas de contacto de ambas partes?

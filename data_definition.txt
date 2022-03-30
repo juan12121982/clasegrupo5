@@ -1,0 +1,32 @@
+Fuentes de datos brutos
+| Amazon Seller - Order Status Prediction /  Ubicación original Ubicación de destino Herramientas de movimiento de datos / https://www.kaggle.com/pranalibose/amazon-seller-order-status-prediction / 
+| ---:| ---: | ---: | ---: | -----: | | Conjunto de datos 1: Fuente extraida del sitio web Kaggle, ventas realizadas a través de Amazon durante el 2021 y lo que va del 2022. : Breve descripción de su ubicación de destino: 
+script1.py: Informe del conjunto de datos 1 | Dataset 2 | Breve descripción de su ubicación original | Breve descripción de su ubicación de destino | script2.R | Dataset 2 Report|
+
+Resumen del conjunto de datos1.
+Proporciona un breve resumen de los datos, como la forma de acceder a los datos. La información más detallada debe figurar en el informe del conjunto de datos 
+1. Base de datos extraida de kaggle que contiene el historial de ventas de articulos decuero a través de Amazon durante el 2021 y lo recorrido del 2022 describiendo los pedidos exitosos, rechazados y/o devueltos. El conjunto de datos presenta las siguientes datos:
+
+order_no- Número único de pedido de Amazon
+
+order_date- Fecha en la que se realizó el pedido
+
+buyer- Nombre del comprador
+
+ship_city- Dirección de entrega Ciudad
+
+ship_state- Estado de la dirección de entrega
+
+sku - Uniqueidentificador de un producto
+
+description- Descripción del Producto
+
+quantity- Número de unidades pedidas
+
+item_total- Importe total pagado por el comprador
+
+shipping_fee- Cargos a cargo de Boss Leathers para enviar el artículo
+
+cod- Modo de pago: Contra reembolso o no
+
+  2. <Proporcionar un breve resumen de los datos, como la forma de acceder a los datos. En el informe del conjunto de datos 2 debe figurar información más detallada.
